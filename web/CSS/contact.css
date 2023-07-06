@@ -1,0 +1,88 @@
+.top-menu-bar {
+    position: relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 20;
+    background-color: black;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.top-menu-bar a {
+    width: 30%;
+    height: 100%;
+}
+
+.top-menu-bar label {
+    width: 30%;
+    height: 100%;
+}
+
+.top-menu-bar div {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+}
+.top-menu-bar div:hover {
+    background-color: gray;
+}
+a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+}
+
+li {
+    list-style: none
+}
+
+label {
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer
+}
+
+#drop-items {
+    position: absolute;
+    background-color: black;
+    height: 100px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#drop-items.show {
+    position: absolute;
+    background-color: black;
+    height: 100px;
+    z-index: 999;
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+#drop-items a {
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+    color: white;
+}
+
+#drop-items div {
+    font-size: 1.5em;
+    align-content: center;
+    align-items: center;
+}
+
+#drop-items div:hover {
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}

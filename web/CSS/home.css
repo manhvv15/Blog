@@ -1,0 +1,231 @@
+*{
+    margin: 0px;
+}
+.all {
+    background-image: url("../Image/home-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    position: fixed;
+    overflow-x: hidden;
+}
+.top-menu-bar {
+    position: relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 20;
+    background-color: black;
+    height: 100px;
+}
+
+.menu-bar-left {
+    width: 40%;
+}
+.menu-bar-right {
+    width: 40%;
+    margin-left: auto;
+}
+
+.top-menu-bar a {
+    width: 30%;
+    height: 100%;
+}
+
+.top-menu-bar label {
+    width: 30%;
+    height: 100%;
+}
+
+.top-menu-bar div {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+.top-menu-bar form {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+.top-menu-bar .menu-item:hover {
+    background-color: gray;
+}
+a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+}
+
+li {
+    list-style: none
+}
+
+label {
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer
+}
+
+#drop-items {
+    position: absolute;
+    background-color: black;
+    height: 100px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#drop-items.show {
+    position: absolute;
+    background-color: black;
+    height: 100px;
+    z-index: 999;
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+#drop-items a {
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+    color: white;
+}
+
+#drop-items div {
+    font-size: 1.5em;
+    align-content: center;
+    align-items: center;
+}
+
+#drop-items div:hover {
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+
+.content {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: fit-content;
+    height: fit-content;
+}
+.content p {
+    font-size: 20px;
+}
+#newPost-button {
+    margin: 0px auto;
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 10px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .10s;
+}
+
+#newPost-button:active,
+#newPost-button:hover {
+    outline: 0;
+}
+
+#newPost-button span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+#newPost-button:hover span {
+    background: none;
+}
+
+#newPost-button:active {
+    transform: scale(0.9);
+}
+
+#input-search {
+    margin-right: 10px;
+    padding: 5px;
+    width: 50%;
+    font-size: 1.25em;
+}
+
+#search-button {
+    height: 100%;
+    background-color: black;
+    color: white;
+    width: 100px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: gray;
+}
+
+.list {
+    position: absolute;
+    width: 50%;
+    left: 23%;
+    height: auto;
+    padding: 20px;
+}
+.list a {
+    color: black;
+}
+.list-item {
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px;
+}
+.list-item:hover {
+    transform: scale(1.05);
+    transition: all .15s;
+}
+.list-item img {
+    width: 100%;
+    height: 80%;
+}
+
+.list-item h4 {
+    align-items: center;
+    padding-top: 10px;
+}
